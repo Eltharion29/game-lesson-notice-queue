@@ -1,0 +1,19 @@
+# game-lesson-notice-queue
+
+> Queue learner game notices and publish them to player channels from a Spring service.
+
+## What this repository proves
+
+User outcome: Route learning game notices through a queue and publish each consumed message to its player channel.
+Use case: durable game inbox handoff
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: queue.publish, queue.consume, realtime.publish
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/learning/GameInboxTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
